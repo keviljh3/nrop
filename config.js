@@ -1,6 +1,6 @@
 
 module.exports = {
-  port : 3002 , 
+  port : 8080 , 
   host : {
     'y66t':'aHR0cDovL3d3dy50NjZ5LmNvbS8=',
     'nrop19':'aHR0cDovL3d3dy45MXBvcm4uY29tLw==',
