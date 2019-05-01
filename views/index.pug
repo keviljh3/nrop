@@ -25,7 +25,8 @@ block content
       ul
         each item in data
           li
-           - var newurl='http://junonrop1111.herokuapp.com/page/'+channal+'/'+item.viewkey
+           - var newurl0='http://junonrop.herokuapp.com/page/'+channal+'/'+item.viewkey
+           - var newurl=newurl0.replace("http://junonrop.herokuapp.com/page/nrop19/","https://91.yzyz.ml/video.php?url=")
             a(href=newurl,title=item.title)
               -if(item.img)
                 .thumb(style="background-image:url("+item.img+")")
