@@ -25,10 +25,8 @@ block content
       ul
         each item in data
           li
-           - var http = require('http')
-           - var URL = require('url')
            - var newurl0=host+item.viewkey
-           - var ppp = URL.parse(host,true)
+           - var ppp = request.getRequestURL()
            - var newurl=newurl0.replace(host,"https://91.yzyz.ml/video.php?url=")
             a(target="_blank",href=newurl,title=item.title)
               -if(item.img)
