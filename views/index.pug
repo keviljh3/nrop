@@ -25,7 +25,8 @@ block content
       ul
         each item in data
           li
-            a(href='http://junonrop2222.herokuapp.com/page/'+channal+'/'+item.viewkey,title=item.title)
+           - var newurl='http://junonrop1111.herokuapp.com/page/'+channal+'/'+item.viewkey
+            a(href=newurl,title=item.title)
               -if(item.img)
                 .thumb(style="background-image:url("+item.img+")")
               .cnt
