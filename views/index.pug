@@ -26,7 +26,7 @@ block content
         each item in data
           li
            - var newurl0=host+item.viewkey
-           -if(host.includes('nrop19'))
+           -if(host.indexOf('nrop19')>=0)
             - var newurl=newurl0.replace(host,"https://91.yzyz.ml/video.php?url=")
             a(target="_blank",href=newurl,title=item.title)
               -if(item.img)
