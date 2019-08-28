@@ -13,7 +13,8 @@ const data = {
       data.push({
         viewkey : $1 , 
         thumb : $2.replace(/http:/,'https:') ,
-        img : $2.replace(/http:/,'https://91.yzyz.ml/viewPic.php?url=http:').replace(/\d+_/,''),
+        img : $2.replace(/\d+_/,''),
+        //img : $2.replace(/http:/,'https://91.yzyz.ml/viewPic.php?url=http:').replace(/\d+_/,''),
         title : $3
       })
       return ''
